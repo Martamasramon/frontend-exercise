@@ -1,8 +1,10 @@
-import React from "react";
+import React, {Component}  from "react";
 import Data from "../olive_stats.json";
 import Plot from 'react-plotly.js';
 
-const ColorPlot = () => {
+class ColorPlot extends Component {
+
+  render(){
 
   // See how much data there is
   const len = Data.length;
@@ -42,6 +44,7 @@ const ColorPlot = () => {
               />
       </div>
   );
+}
 }
 
 export default ColorPlot;
